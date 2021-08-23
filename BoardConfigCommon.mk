@@ -136,9 +136,9 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_AB.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab_AB.qcom
 else
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.qcom
 BOARD_INCLUDE_RECOVERY_DTBO := true
 endif
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true

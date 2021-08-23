@@ -192,6 +192,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.mi.usb.sh \
+    init.qti.dcvs.sh \
+    init.target.rc \
+    init.xiaomi.rc \
+    ueventd.xiaomi.rc
+
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1
@@ -227,6 +236,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    init \
     media-legacy \
     nq-nfc \
     overlay \
@@ -235,30 +245,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     usb \
     vibrator \
     wlan
-
-# Rootdir
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sh \
-    init.qti.dcvs.sh \
-    init.qti.media.sh \
-    qca6234-service.sh \
-
-PRODUCT_PACKAGES += \
-    init.qcom.factory.rc \
-    init.qcom.rc \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    fstab.qcom \
-    ueventd.qcom.rc \
 
 # Sensors
 PRODUCT_PACKAGES += \
