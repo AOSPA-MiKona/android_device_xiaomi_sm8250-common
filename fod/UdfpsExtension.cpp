@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <compositionengine/FodExtension.h>
+#include <compositionengine/UdfpsExtension.h>
 
-uint32_t getFodZOrder(uint32_t z, bool touched) {
+uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
     if (touched) {
         z |= 0x20000000u;
     }
     return z;
 }
 
-uint64_t getFodUsageBits(uint64_t usageBits, bool) {
+uint64_t getUdfpsUsageBits(uint64_t usageBits, bool) {
     return usageBits;
 }
