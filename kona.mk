@@ -175,7 +175,8 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
+    vendor.xiaomi.hardware.touchfeature@1.0.vendor
 endif
 
 PRODUCT_PACKAGES += \
